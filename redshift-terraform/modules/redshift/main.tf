@@ -8,7 +8,7 @@ variable "iam_role_arn" {
   type = string
 }
 
-resource "aws_redshift_subnet_group" "subnet_group" {
+resource "aws_redshift_subnet_group" "default" {
   name       = "redshift-subnet-group"
   subnet_ids = var.subnet_ids
 }
