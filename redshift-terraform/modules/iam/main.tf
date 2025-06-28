@@ -1,4 +1,4 @@
-resource "aws_iam_role" "redshift_logging" {
+resource "aws_iam_role" "redshift_logging_iam" {
   name = "RedshiftLoggingRole"
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
