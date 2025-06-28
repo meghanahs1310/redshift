@@ -13,6 +13,7 @@ resource "aws_redshift_subnet_group" "default" {
   subnet_ids = var.subnet_ids
 }
 
+
 resource "aws_redshift_cluster" "this" {
   cluster_identifier       = "redshift-cluster-1"
   node_type                = "dc2.large"
