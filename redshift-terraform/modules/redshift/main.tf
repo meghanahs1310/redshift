@@ -14,7 +14,7 @@ resource "aws_redshift_subnet_group" "subnet_group" {
 }
 
 resource "aws_redshift_cluster" "this" {
-  cluster_identifier       = "my-redshift-cluster"
+  cluster_identifier       = "redshift-cluster-1"
   node_type                = "dc2.large"
   master_username          = "adminuser"
   master_password          = "RedshiftPass123!"
