@@ -1,9 +1,4 @@
 variable "subnet_ids" {
-  type = list(string)
-}
-variable "security_group_ids" {
-  type = list(string)
-}
-variable "iam_role_arn" {
-  type = string
+  description = "List of subnet IDs for Redshift subnet group"
+  type        = list(string)
 }
