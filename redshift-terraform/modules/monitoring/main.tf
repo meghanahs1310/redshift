@@ -1,5 +1,3 @@
-variable "log_bucket_id" {}
-
 resource "aws_cloudtrail" "trail" {
   name                          = "redshift-trail"
   s3_bucket_name                = var.log_bucket_id
