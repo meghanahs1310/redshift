@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "log_bucket" {
+resource "aws_s3_bucket" "bucket_for_logs" {
   bucket = "redshift-logs-${random_id.id.hex}"
   force_destroy = true
 }
